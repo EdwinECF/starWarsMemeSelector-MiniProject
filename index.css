@@ -1,0 +1,186 @@
+@font-face{
+    font-family: 'starwars';
+  src: url(Starjout.ttf);
+}
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #000000;
+}
+
+/*typography*/
+
+h1, h2, h3{
+    text-align: center;
+}
+
+h1, h2{
+    font-family: 'starwars';
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: x-large;
+    margin: 0;
+}
+
+h1{
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3{
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    color: #FFE81F;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* layout */
+
+header{
+    background-image: url(images/backstar.jpg);
+    margin-bottom: 0px;
+}
+main{
+    background-image: url(images/main.jpg);
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 370px;
+    gap: 15px;
+    padding: 10px 0 0 0;
+}
+
+.yoda-img{
+    width: 80px;
+    filter: drop-shadow(0 0 10px white);
+}
+
+.controls-container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0px auto;
+}
+
+/* controls */
+
+.character-radios{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #000000;
+    padding: 4px 8px;
+    color: #FFE81F;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+}
+
+.radio:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.radio:last-child{
+    border-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+label{
+    font-size: 14px;
+    padding: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.highlight{
+    background-color: #000000;
+    color: #FFE81F;
+    font-weight: bold;
+    accent-color: #FFE81F;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+.gifs-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    accent-color: #FFE81F;
+}
+
+.gifs-check-label{
+    width: unset;
+    margin-right: 5px;
+    color: #FFE81F;
+    text-shadow: 2px 2px 2px black;
+}
+
+.get-image-btn{
+    font-family: 'starwars';
+    background-color: #FFAF00;
+    color: #000000;
+    padding: 15px 19px;
+    font-size: 29px;
+    font-weight: lighter;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* modal */
+
+.meme-modal{
+    display: none; /*flex when displayed*/
+    position: fixed;
+    margin: auto;
+    top: 80px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #67595e;
+    border-radius: 5px;
+    width: 420px;
+    height: 490px;
+    background-color: #fff0ee;
+}
+
+.starwars-img{
+    max-width: 340px;
+    max-height: 420px;
+    border-radius: 5px;
+}
+
+.meme-modal-close-btn{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #555;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+}
+
+.meme-modal-close-btn:hover{
+    color: white;
+    background-color: #bd301d;
+    border: 2px solid #bd301d;
+}
